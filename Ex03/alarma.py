@@ -1,6 +1,9 @@
+import time
+
 def alarm_simulator(total_time):
     current_second = 0
     while current_second < total_time:
+        time.sleep(1)
         current_second += 1
 
         if current_second % 10 == 0:
